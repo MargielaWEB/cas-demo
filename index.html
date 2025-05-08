@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST-PLAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="main-div">
+        <h2 class='main-title'>Угадай число</h2>
+        <hr>
+        <div class="game-field">
+            <div>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            </div>
+            <div>
+            <button class="btn">6</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">10</button>
+            </div>
+        </div>
+        <div>
+            <button class="new-game-btn">Новая игра</button>
+        </div>
+        <div class="text-boxes">
+            <div class="counter">
+                <p class="attempts-script">Попытки: <span class="attempts-span">3</span></p>
+            </div>
+            <div class="furrer">
+                <p class="furrer-script">Хорошей игры!<span class="furrer-span"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js') }}"></script>
+</body>
+</html>
